@@ -1,0 +1,210 @@
+[dir] .nx-theme-styles .nx-theme-form {
+  --pk-primary: #E20C15;
+  --pk-primary-dark: #9E0810;
+  --pk-primary-soft: #FBEAEA;
+  --pk-ink: #201A19;
+  --pk-muted: #6B6260;
+  --pk-line: #E4DFDD;
+  --pk-line-strong: #D8D3D1;
+  --pk-surface-2: #FAF8F7;
+  --pk-disabled-bg: #EFECEA;
+  --pk-disabled-fg: #514B49;
+  --pk-radius: 9px;
+  --pk-radius-lg: 12px;
+  font-family: "Open Sans", "Segoe UI", sans-serif;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-group-control-container {
+  position: relative;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  margin-bottom: 20px;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-group-control-header-background {
+  background: transparent !important;
+  border: none !important;
+  position: relative;
+  padding-bottom: 12px !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-group-control-header-background::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0; height: 2px;
+  background: linear-gradient(90deg, var(--pk-primary) 0%, var(--pk-primary) 6%, var(--pk-line) 46%, transparent 100%);
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-group-control-header .nx-theme-richtext {
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  color: var(--pk-ink) !important;
+  letter-spacing: -.005em;
+  padding-left: 33px;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-group-control-body {
+  padding-top: 10px;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-g1 .nx-group-control-header-background::before,
+[dir] .nx-theme-styles .nx-theme-form .pk-g2 .nx-group-control-header-background::before,
+[dir] .nx-theme-styles .nx-theme-form .pk-g3 .nx-group-control-header-background::before,
+[dir] .nx-theme-styles .nx-theme-form .pk-g4 .nx-group-control-header-background::before {
+  position: absolute;
+  left: 0; top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(150deg, var(--pk-primary), #FF6A61);
+  box-shadow: 0 3px 7px -1px rgba(226,12,21,.4);
+  z-index: 2;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-g1 .nx-group-control-header-background::before { content: "01"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g2 .nx-group-control-header-background::before { content: "02"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g3 .nx-group-control-header-background::before { content: "03"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g4 .nx-group-control-header-background::before { content: "04"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-subgroup .nx-theme-richtext {
+  font-size: 13px !important;
+  color: var(--pk-primary-dark) !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-header {
+  background: linear-gradient(128deg, #3A0A0D 0%, var(--pk-primary) 62%, #FF6A61 145%) !important;
+  border-radius: var(--pk-radius-lg) !important;
+  padding: 14px 0 20px !important;
+  margin-bottom: 14px !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-header .nx-group-control-header-background {
+  padding: 0 20px 10px !important;
+  background: transparent !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-header .nx-group-control-header-background::after {
+  display: none;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-header .nx-group-control-header .nx-theme-richtext {
+  color: rgba(255,255,255,.7) !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  padding-left: 0;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-header .nx-group-control-body {
+  background: #fff !important;
+  border-radius: var(--pk-radius-lg) !important;
+  margin: 0 16px !important;
+  padding: 16px 20px !important;
+  box-shadow: 0 18px 38px -14px rgba(30,6,6,.4), 0 2px 6px rgba(0,0,0,.1) !important;
+  position: relative;
+  z-index: 1;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-header .row {
+  align-items: center !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-logo {
+  display: flex !important;
+  align-items: center;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-logo img {
+  height: 34px;
+  width: auto;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-title p {
+  text-align: left !important;
+  margin: 0 !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .pk-title .nx-theme-richtext {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: var(--pk-ink) !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .form-control.nx-theme-input-1 {
+  border-radius: var(--pk-radius) !important;
+  border: 1px solid var(--pk-line-strong) !important;
+  background: linear-gradient(180deg, #FFFFFF, #FCFBFA) !important;
+  box-shadow: inset 0 1px 2px rgba(32,26,25,.035);
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+[dir] .nx-theme-styles .nx-theme-form textarea.form-control.nx-theme-input-1 {
+  line-height: 1.55;
+}
+[dir] .nx-theme-styles .nx-theme-form .form-control.nx-theme-input-1:hover:not(:disabled):not(:focus) {
+  border-color: #B7ACA8 !important;
+  box-shadow: inset 0 1px 2px rgba(32,26,25,.035), 0 2px 5px rgba(32,26,25,.05);
+}
+[dir] .nx-theme-styles .nx-theme-form .form-control.nx-theme-input-1:focus {
+  outline: none !important;
+  border-color: var(--pk-primary) !important;
+  box-shadow: 0 0 0 3.5px var(--pk-primary-soft), inset 0 1px 2px rgba(32,26,25,.03) !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-ng-select-1 .ng-select-container {
+  border-radius: var(--pk-radius) !important;
+  border: 1px solid var(--pk-line-strong) !important;
+  background: linear-gradient(180deg, #FFFFFF, #FCFBFA) !important;
+  box-shadow: inset 0 1px 2px rgba(32,26,25,.035);
+  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-ng-select-1:hover .ng-select-container {
+  border-color: #B7ACA8 !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-ng-select-1.ng-select-focused .ng-select-container {
+  border-color: var(--pk-primary) !important;
+  box-shadow: 0 0 0 3.5px var(--pk-primary-soft) !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-ng-select-1 .ng-arrow-wrapper .ng-arrow {
+  border-top-color: var(--pk-primary) !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-radio-1 input[type="radio"],
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-checkbox-1 input[type="checkbox"] {
+  accent-color: var(--pk-primary);
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-checkbox-toggle-on .nx-checkbox-toggle-groove,
+[dir] .nx-theme-styles .nx-theme-form .nx-checkbox-toggle.nx-checkbox-toggle-on {
+  background: var(--pk-primary) !important;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-read-only.form-control,
+[dir] .nx-theme-styles .nx-theme-form .nx-read-only .form-control,
+[dir] .nx-theme-styles .nx-theme-form .nx-read-only .ng-select-container,
+[dir] .nx-theme-styles .nx-theme-form input:disabled,
+[dir] .nx-theme-styles .nx-theme-form select:disabled,
+[dir] .nx-theme-styles .nx-theme-form textarea:disabled,
+[dir] .nx-theme-styles .nx-theme-form input[readonly],
+[dir] .nx-theme-styles .nx-theme-form textarea[readonly] {
+  background: var(--pk-disabled-bg) !important;
+  color: var(--pk-disabled-fg) !important;
+  border-color: var(--pk-line-strong) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  -webkit-text-fill-color: var(--pk-disabled-fg);
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-form-label.nx-break-word {
+  color: var(--pk-ink);
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-required {
+  color: var(--pk-primary);
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-button-1 {
+  border-radius: var(--pk-radius) !important;
+  font-weight: 700 !important;
+  padding: 11px 22px !important;
+  border: 1px solid rgba(0,0,0,.06) !important;
+  background: linear-gradient(128deg, #3A0A0D 0%, var(--pk-primary) 62%, #FF6A61 145%) !important;
+  color: #fff !important;
+  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset, 0 8px 18px -6px rgba(178,10,16,.5), 0 2px 4px rgba(0,0,0,.1) !important;
+  transition: transform .12s ease, box-shadow .15s ease, filter .15s ease;
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-button-1:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+[dir] .nx-theme-styles .nx-theme-form .nx-theme-button-2 {
+  border-radius: var(--pk-radius) !important;
+  font-weight: 700 !important;
+  padding: 11px 22px !important;
+  background: #fff !important;
+  color: var(--pk-muted) !important;
+  border: 1px solid var(--pk-line-strong) !important;
+  box-shadow: 0 1px 2px rgba(32,26,25,.04) !important;
+}
