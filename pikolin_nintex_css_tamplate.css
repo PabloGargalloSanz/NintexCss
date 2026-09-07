@@ -223,6 +223,7 @@
   letter-spacing: .01em;
   transition: all .15s ease;
 }
+
 [dir] .nx-theme-styles .nx-theme-form .nx-theme-button-2:hover {
   border-color: var(--pk-primary) !important;
   color: var(--pk-primary-dark) !important;
