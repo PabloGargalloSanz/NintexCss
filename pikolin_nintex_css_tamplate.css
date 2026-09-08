@@ -30,10 +30,10 @@
   content:"" !important;
   display:block !important;
   position:absolute !important;
-  top:-100vh;
-  left:-100vw;
-  width:300vw;
-  height:300vh;
+  top:-50%;
+  left:-50%;
+  width:200%;
+  height:200%;
   background-image:url("https://grupopikolin.sharepoint.com/SiteAssets/__sitelogo__Logotipo_Pikolin_group.png");
   background-repeat:repeat;
   background-size:340px auto;
@@ -49,7 +49,7 @@
   display:block !important;
   position:absolute !important;
   inset:0;
-  background:radial-gradient(ellipse 170vw 140vh at 100% 0%,transparent 0%,rgba(255,255,255,.4) 60%,var(--pk-white) 100%);
+  background:radial-gradient(ellipse 150% 150% at 100% 0%,transparent 0%,rgba(255,255,255,.4) 60%,var(--pk-white) 100%);
   pointer-events:none;
   z-index:-1;
 }
@@ -58,15 +58,17 @@
 [dir] .nx-theme-styles .nx-theme-form .nx-group-control-container {
   position:relative; 
   border: none !important; 
-  background:var(--pk-white) !important; 
+  background:rgba(255, 255, 255, 0.1) !important; 
+  backdrop-filter: blur(6px) !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.200) !important; 
   padding: 1px !important;
   border-radius: var(--pk-radius) !important;
+  margin-top: 10px;
   margin-bottom:10px;
 }
 
 [dir] .nx-theme-styles .nx-theme-form .nx-group-control-header-background {
-  background:var(--pk-white) !important;
+  background:transparent !important;
   border:none !important;
   position:relative;
   padding-top: 10px !important;
@@ -100,6 +102,7 @@
 }
 
 [dir] .nx-theme-styles .nx-theme-form .nx-group-control-body {
+  background: rgba(255, 255, 255, 0.4) !important;
   padding-top:10px;
   padding-bottom: 20px;
 }
@@ -134,6 +137,15 @@
 
 [dir] .nx-theme-styles .nx-theme-form .pk-subgroup .nx-group-control-header-background::before {
   content:none !important;
+}
+
+[dir] .nx-theme-styles .nx-theme-form .pk-subgroup {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}
+
+[dir] .nx-theme-styles .nx-theme-form .pk-subgroup .nx-group-control-body {
+  background: transparent !important;
 }
 
 /*  5. CABECERA PRINCIPAL SUPERIOR (Header, Logo y Título) */
