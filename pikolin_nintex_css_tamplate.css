@@ -1,8 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..800);
 
-/* 
-   1. VARIABLES DE COLOR Y TEMA BASE
- */
+/*    1. VARIABLES DE COLOR Y TEMA BASE */
 [dir] .nx-theme-styles .nx-theme-form {
   --pk-primary: #E20C15;
   --pk-primary-dark:#9E0810;
@@ -36,7 +34,7 @@
   left:-100vw;
   width:300vw;
   height:300vh;
-  background-image:url("https://grupopikolin.sharepoint.com/sites/PLM/SiteAssets/Grupo%20Pikolin.png");
+  background-image:url("https://grupopikolin.sharepoint.com/SiteAssets/__sitelogo__Logotipo_Pikolin_group.png");
   background-repeat:repeat;
   background-size:340px auto;
   opacity:.09;
@@ -58,17 +56,20 @@
 
 /*  3. AGRUPACIONES DE CAMPOS Y SUS TÍTULOS */
 [dir] .nx-theme-styles .nx-theme-form .nx-group-control-container {
-  position:relative;
-  border:none !important;
-  box-shadow:none !important;
-  background:transparent !important;
-  margin-bottom:26px;
+  position:relative; 
+  border: none !important; 
+  background:var(--pk-white) !important; 
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.200) !important; 
+  padding: 1px !important;
+  border-radius: var(--pk-radius) !important;
+  margin-bottom:10px;
 }
 
 [dir] .nx-theme-styles .nx-theme-form .nx-group-control-header-background {
   background:var(--pk-white) !important;
   border:none !important;
   position:relative;
+  padding-top: 10px !important;
   padding-bottom:12px !important;
   display:flex !important;
   align-items:center !important;
@@ -100,10 +101,13 @@
 
 [dir] .nx-theme-styles .nx-theme-form .nx-group-control-body {
   padding-top:10px;
+  padding-bottom: 20px;
 }
 
 /*   4. NUMERACIÓN AUTOMÁTICA DE SECCIONES (01, 02, 03...)   Crea los circulitos rojos con números para las clases pk-g1*/
 [dir] .nx-theme-styles .nx-theme-form [class*="pk-g"] .nx-group-control-header-background::before {
+  margin-top: 5px;
+  margin-left: 10px;
   flex:0 0 auto;
   width:27px;
   height:27px;
@@ -269,8 +273,22 @@
   margin-top:26px;
 }
 
+[dir] .nx-theme-styles .nx-theme-form .nx-checkbox-toggle-container,
+[dir] .nx-theme-styles .nx-theme-form .nx-checkbox-toggle-container * {  
+  color: var(--pk-ink) !important;
+}
+
 [dir] .nx-theme-styles .nx-theme-form .nx-checkbox-toggle-groove {
   border-radius:999px !important;
+  border: 1px solid var(--pk-line-strong) !important;
+  box-sizing: content-box !important; 
+  display: flex !important;  
+  align-items: center !important;
+}
+
+[dir] .nx-theme-styles .nx-theme-form input[type="checkbox"]:focus ~ .nx-checkbox-toggle-container .nx-checkbox-toggle-groove {
+  border-color: var(--pk-primary) !important;
+  box-shadow: 0 0 0 2px var(--pk-primary-soft) !important;
 }
 
 [dir] .nx-theme-styles .nx-theme-form input[type="checkbox"]:checked ~ .nx-checkbox-toggle-container .nx-checkbox-toggle-groove {
@@ -340,6 +358,13 @@
   background:var(--pk-primary) !important;
   color:var(--pk-white) !important;
   outline:none !important;
+}
+
+.ng-dropdown-panel {
+  border: 1px solid var(--pk-primary) !important;
+  border-radius: 4px !important; 
+  box-shadow: 0 4px 12px rgba(0,0,0,.1) !important; 
+  overflow: hidden !important; 
 }
 
 /* 12. CALENDARIO */
