@@ -284,7 +284,8 @@
 /* Label (tablas) */
 [dir] .nx-theme-styles .nx-theme-form .pk-label-tabla,
 [dir] .nx-theme-styles .nx-theme-form .pk-label-tabla * {
-  
+  font-family: "Open Sans", sans-serif !important;
+  color: var(--pk-ink) !important;
   font-size: 14px !important;
 }
 
