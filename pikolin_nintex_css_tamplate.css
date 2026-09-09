@@ -17,7 +17,7 @@
   --pk-radius:9px;
   --pk-radius-lg:12px;
   --pk-grad-hero:linear-gradient(128deg,#3A0A0D 0%,var(--pk-primary) 62%,#FF6A61 145%);
-  font-family:"Open Sans","Segoe UI",sans-serif;
+  font-family:"Open Sans", sans-serif;
   position:relative !important;
   z-index:0 !important;
   overflow:hidden !important;
@@ -129,6 +129,12 @@
 [dir] .nx-theme-styles .nx-theme-form .pk-g2 .nx-group-control-header-background::before { content:"02"; }
 [dir] .nx-theme-styles .nx-theme-form .pk-g3 .nx-group-control-header-background::before { content:"03"; }
 [dir] .nx-theme-styles .nx-theme-form .pk-g4 .nx-group-control-header-background::before { content:"04"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g5 .nx-group-control-header-background::before { content:"05"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g6 .nx-group-control-header-background::before { content:"06"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g7 .nx-group-control-header-background::before { content:"07"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g8 .nx-group-control-header-background::before { content:"08"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g9 .nx-group-control-header-background::before { content:"09"; }
+[dir] .nx-theme-styles .nx-theme-form .pk-g10 .nx-group-control-header-background::before { content:"10"; }
 
 [dir] .nx-theme-styles .nx-theme-form .pk-subgroup .nx-theme-richtext {
   font-size:13px !important;
@@ -275,6 +281,13 @@
   fill:var(--pk-primary) !important;
 }
 
+/* Label (tablas) */
+[dir] .nx-theme-styles .nx-theme-form .pk-label-tabla,
+[dir] .nx-theme-styles .nx-theme-form .pk-label-tabla * {
+  
+  font-size: 14px !important;
+}
+
 /*   7. CHECKBOXES, RADIO BUTTONS E INTERRUPTORES */
 [dir] .nx-theme-styles .nx-theme-form :is(.nx-theme-radio-1 input[type="radio"],.nx-theme-checkbox-1 input[type="checkbox"]) {
   accent-color:var(--pk-primary);
@@ -322,6 +335,22 @@
 
 [dir] .nx-theme-styles .nx-theme-form .nx-required {
   color:var(--pk-primary);
+}
+
+[dir] .nx-theme-styles .nx-theme-form :is(.nx-required, .required-asterisk, [class*="required"], [class*="asterisk"]) {
+  color: var(--pk-primary) !important;
+}
+
+[dir] .nx-theme-styles .nx-theme-form :is(.nx-tooltip, .nx-help-icon, ntx-tooltip, [class*="tooltip"]) :is(svg, path, i, span) {
+  color: var(--pk-primary) !important;
+  fill: var(--pk-primary) !important;
+}
+
+[dir] .nx-theme-styles .nx-theme-form :is(.nx-form-label, .nx-form-label.nx-break-word, .nx-label, label.nx-form-label) {
+  font-family: "Open Sans", sans-serif !important;
+  color: var(--pk-ink) !important; 
+  font-weight: 600 !important;      
+  letter-spacing: -0.01em;
 }
 
 /*  10. BOTONES button-1 = Botón principal button-2 = Botón secundario */
