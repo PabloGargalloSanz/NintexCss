@@ -14,9 +14,9 @@
   --pk-disabled-bg:#EFECEA;
   --pk-disabled-fg:#514B49;
   --pk-white: #fff;
+  --pk-grad-hero:linear-gradient(128deg,#3A0A0D 0%,var(--pk-primary) 62%,#FF6A61 145%);
   --pk-radius:9px;
   --pk-radius-lg:12px;
-  --pk-grad-hero:linear-gradient(128deg,#3A0A0D 0%,var(--pk-primary) 62%,#FF6A61 145%);
   font-family:"Open Sans", sans-serif;
   position:relative !important;
   z-index:0 !important;
