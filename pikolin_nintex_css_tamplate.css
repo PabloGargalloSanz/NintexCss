@@ -23,6 +23,7 @@
   overflow:hidden !important;
   background:var(--pk-white) !important;
   box-shadow:0 6px 24px rgba(0,0,0,.16) !important;
+  border-radius:var(--pk-radius) !important;
 }
 
 /* 2. MARCA DE AGUA (FONDO GIGANTE) */
